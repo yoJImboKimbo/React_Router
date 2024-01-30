@@ -12,6 +12,7 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={ <Root/> }>
     <Route indexElement={ <HomePage/>}></Route>
     <Route path=':type' element={<HomePage/>}></Route>
+    <Route path=':type/:id' element={ <PetDetailsPage/>}></Route>
   </Route>))
 
 function App() {
