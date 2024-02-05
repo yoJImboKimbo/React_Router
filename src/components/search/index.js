@@ -22,9 +22,9 @@ const Search = () => {
 
     // imperatively redirect with useNavigate() returned function
     navigate({
-      pathname:"/search?name=fido",
+      pathname:'/search',
       search: `?${query}`
-    });
+    })
   };
 
   return (
