@@ -4,6 +4,7 @@ import Logo from '../../assets/logo.svg';
 import Search from '../search';
 
 // Import NavLink
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   const [petTypes, setPetTypes] = useState([]);
@@ -26,11 +27,11 @@ const Navigation = () => {
       <ul className="nav-links">
         <li key={'all'}>
           {/* These links should be NavLink component and add a special active class name if its an active link */}
-          <a href="/"
-            className='nav-link'
+          <NavLink to="/"
+            className="nav-link"
           >
             All Pets
-          </a>
+          </NavLink>
         </li>
         {petTypes
           ? petTypes.map((type) => (
